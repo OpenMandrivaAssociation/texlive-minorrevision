@@ -6,7 +6,7 @@
 # catalog-version 1.1
 Name:		texlive-minorrevision
 Version:	1.1
-Release:	6
+Release:	7
 Summary:	Quote and refer to a manuscript for minor revisions
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/minorrevision
