@@ -1,18 +1,12 @@
-# revision 32165
-# category Package
-# catalog-ctan /macros/latex/contrib/minorrevision
-# catalog-date 2013-11-16 09:55:49 +0100
-# catalog-license lppl1.2
-# catalog-version 1.1
 Name:		texlive-minorrevision
-Version:	1.1
-Release:	10
+Version:	32165
+Release:	1
 Summary:	Quote and refer to a manuscript for minor revisions
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/minorrevision
 License:	LPPL1.2
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/minorrevision.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/minorrevision.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/minorrevision.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/minorrevision.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -29,12 +23,12 @@ manuscript, for this letter. The package loads the package
 lineno, so (in effect) shares lineno's incompatibilities.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -45,7 +39,7 @@ lineno, so (in effect) shares lineno's incompatibilities.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
