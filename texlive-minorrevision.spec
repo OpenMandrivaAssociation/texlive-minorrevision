@@ -1,6 +1,6 @@
 Name:		texlive-minorrevision
 Version:	32165
-Release:	1
+Release:	2
 Summary:	Quote and refer to a manuscript for minor revisions
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/minorrevision
